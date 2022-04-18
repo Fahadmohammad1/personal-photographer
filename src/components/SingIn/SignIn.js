@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Button, Form, Spinner } from "react-bootstrap";
 import facebookLogo from "../../images/logos/Facebook.png";
 import googleLogo from "../../images/logos/Google.png";
@@ -9,9 +9,13 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useSendPasswordResetEmail } from "react-firebase-hooks/auth";
 
 const SignIn = () => {
   const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
+
+  const [sendPasswordResetEmail, sending, resetError] =
+    useSendPasswordResetEmail(auth);
 
   const email = useRef("");
   const password = useRef("");
@@ -47,6 +51,9 @@ const SignIn = () => {
     console.log(user);
     navigate(from, { replace: true });
   }
+  const handleForgetPassword = () => {
+    sendPasswordResetEmail(email.current.value);
+  };
 
   return (
     <div className="w-50 mx-auto mt-5 ">
@@ -68,6 +75,9 @@ const SignIn = () => {
           Sign In
         </Button>
       </Form>
+      <div>
+        <button onClick={handleForgetPassword}>forget password?</button>
+      </div>
       <div className="d-flex mt-4">
         <hr style={{ height: "2px" }} className="w-50" />
         <p className="mx-2">OR</p>

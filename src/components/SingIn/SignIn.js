@@ -10,12 +10,16 @@ import {
 import auth from "../../firebase.init";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSendPasswordResetEmail } from "react-firebase-hooks/auth";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SignIn = () => {
   const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
 
   const [sendPasswordResetEmail, sending, resetError] =
     useSendPasswordResetEmail(auth);
+
+  const notify = () => toast("Check Your Email");
 
   const email = useRef("");
   const password = useRef("");
@@ -53,6 +57,7 @@ const SignIn = () => {
   }
   const handleForgetPassword = () => {
     sendPasswordResetEmail(email.current.value);
+    notify();
   };
 
   return (
@@ -77,6 +82,7 @@ const SignIn = () => {
       </Form>
       <div>
         <button onClick={handleForgetPassword}>forget password?</button>
+        <ToastContainer></ToastContainer>
       </div>
       <div className="d-flex mt-4">
         <hr style={{ height: "2px" }} className="w-50" />

@@ -39,8 +39,8 @@ const SignUp = () => {
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
         <Button
+          className="primary-btn w-100"
           onClick={handleFormSubmit}
-          variant="outline-primary w-100"
           type="submit"
         >
           Submit

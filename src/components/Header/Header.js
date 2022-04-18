@@ -3,11 +3,13 @@ import React from "react";
 import { Button, Container, Nav, Navbar, Spinner } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { NavLink } from "react-router-dom";
+
 import auth from "../../firebase.init";
 import "./Header.css";
 
 const Header = () => {
   const [user, loading] = useAuthState(auth);
+
   if (loading) {
     return (
       <Button variant="primary" disabled>
@@ -52,7 +54,7 @@ const Header = () => {
               </NavLink>
               <NavLink
                 to="/about"
-                className="text-dark my-auto text-decoration-none"
+                className="ms-2 text-dark my-auto text-decoration-none"
               >
                 About
               </NavLink>
@@ -60,6 +62,7 @@ const Header = () => {
             <Nav>
               {user ? (
                 <button
+                  className="rounded-pill fw-bold text-white"
                   onClick={() => {
                     signOut(auth);
                   }}
@@ -70,15 +73,19 @@ const Header = () => {
                 <div>
                   <NavLink
                     to="/signIn"
-                    className="text-dark my-auto text-decoration-none"
+                    className="text-dark my-auto text-decoration-none mx-2 "
                   >
-                    SIGN IN
+                    <button className="rounded-pill primary-btn">
+                      SIGN IN
+                    </button>
                   </NavLink>
                   <NavLink
                     to="/signUp"
                     className="text-dark my-auto text-decoration-none"
                   >
-                    SIGN UP
+                    <button className="rounded-pill primary-btn">
+                      SIGN UP
+                    </button>
                   </NavLink>
                 </div>
               )}

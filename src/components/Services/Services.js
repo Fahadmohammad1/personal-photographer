@@ -10,7 +10,7 @@ const Services = () => {
       .then((data) => setPackages(data));
   }, []);
   return (
-    <div id="services" className="row row-cols-lg-3 w-100">
+    <div className="row row-cols-lg-3 w-100 mx-auto">
       {packages.map((singlePackage) => (
         <Service key={singlePackage.id} singlePackage={singlePackage}></Service>
       ))}

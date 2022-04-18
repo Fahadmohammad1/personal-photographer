@@ -1,3 +1,9 @@
 .navbar {
   background: lightcyan;
 }
+.primary-btn {
+  background-color: #6b8181;
+}
+.primary-btn:hover {
+  background-color: #f8ca92;
+}

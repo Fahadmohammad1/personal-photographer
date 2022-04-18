@@ -12,7 +12,14 @@ const Service = ({ singlePackage }) => {
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          <Button variant="primary">Hire</Button>
+          <Button
+            onClick={() => {
+              navigate("/checkOut");
+            }}
+            variant="primary"
+          >
+            Hire
+          </Button>
         </Card.Body>
       </Card>
     </div>

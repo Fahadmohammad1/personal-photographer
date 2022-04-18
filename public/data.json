@@ -1,0 +1,23 @@
+[
+  {
+    "id": "625d4f63e6545ef8edf9605b",
+    "price": "$2,449.21",
+    "picture": "http://placehold.it/32x32",
+    "name": "Half Day",
+    "description": "this is a short description for packages"
+  },
+  {
+    "id": "625d4f636cd40a0eaa13a00b",
+    "price": "$3,271.61",
+    "picture": "http://placehold.it/32x32",
+    "name": "One Day",
+    "description": "this is a short description for packages"
+  },
+  {
+    "id": "625d4f63ac5311de18afbd32",
+    "price": "$1,861.24",
+    "picture": "http://placehold.it/32x32",
+    "name": "2 days Unlimited",
+    "description": "this is a short description for packages"
+  }
+]

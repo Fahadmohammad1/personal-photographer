@@ -2,48 +2,17 @@ import React from "react";
 import { Button, Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-const Service = () => {
+const Service = ({ singlePackage }) => {
+  const { name, price, picture, description } = singlePackage;
   const navigate = useNavigate();
   return (
-    <div id="services">
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+    <div>
+      <Card className="mx-auto" style={{ width: "18rem" }}>
+        <Card.Img variant="top" src={picture} />
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Primary</Button>
-        </Card.Body>
-      </Card>
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Premium</Button>
-        </Card.Body>
-      </Card>
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button
-            onClick={() => {
-              navigate("/checkOut");
-            }}
-            variant="primary"
-          >
-            VIP
-          </Button>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>{description}</Card.Text>
+          <Button variant="primary">Hire</Button>
         </Card.Body>
       </Card>
     </div>

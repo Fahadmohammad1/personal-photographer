@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import BestClicks from "../BestClicks/BestClicks";
-import Service from "../Service/Service";
+import Services from "../Services/Services";
 import "./Home.css";
 
 const Home = () => {
@@ -35,7 +35,7 @@ const Home = () => {
         <BestClicks></BestClicks>
       </div>
       <div>
-        <Service></Service>
+        <Services></Services>
       </div>
     </div>
   );

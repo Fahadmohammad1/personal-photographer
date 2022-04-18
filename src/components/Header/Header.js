@@ -1,6 +1,8 @@
+import { signOut } from "firebase/auth";
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import auth from "../../firebase.init";
 import "./Header.css";
 
 const Header = () => {
@@ -19,10 +21,10 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features" className="text-dark">
-                Features
-              </Nav.Link>
-              <NavLink to="/pricing">Services</NavLink>
+              <NavLink to="/" className="text-dark">
+                Home
+              </NavLink>
+              <Nav.Link href="#services">Services</Nav.Link>
             </Nav>
             <Nav>
               <NavLink to="/signIn" className="text-dark">
@@ -31,6 +33,13 @@ const Header = () => {
               <NavLink to="/signUp" className="text-dark">
                 SIGN UP
               </NavLink>
+              <button
+                onClick={() => {
+                  signOut(auth);
+                }}
+              >
+                SIGN OUT
+              </button>
             </Nav>
           </Navbar.Collapse>
         </Container>

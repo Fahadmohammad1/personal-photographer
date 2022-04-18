@@ -62,7 +62,7 @@ const Header = () => {
             <Nav>
               {user ? (
                 <button
-                  className="rounded-pill fw-bold text-white"
+                  className="primary-btn rounded-pill fw-bold text-white"
                   onClick={() => {
                     signOut(auth);
                   }}

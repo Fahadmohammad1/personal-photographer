@@ -3,21 +3,21 @@
     "id": "625d4f63e6545ef8edf9605b",
     "price": "$2,449.21",
     "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2mmV0W6Y5Nk-DXucQjmJybbLoAwqcCQfeUg&usqp=CAU",
-    "name": "Half Day",
-    "description": "this is a short description for packages"
+    "name": "Wedding",
+    "description": "Unlimited photo for 2 day. You will get your photos in 3 days"
   },
   {
     "id": "625d4f636cd40a0eaa13a00b",
     "price": "$3,271.61",
-    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2mmV0W6Y5Nk-DXucQjmJybbLoAwqcCQfeUg&usqp=CAU",
-    "name": "One Day",
-    "description": "this is a short description for packages"
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkscuQ_9zZbruuWkCh7UhwiNlVBwQPilJXeg&usqp=CAU",
+    "name": "Birthday",
+    "description": "I shoot photos for birthday party only 3 hours unlimited"
   },
   {
     "id": "625d4f63ac5311de18afbd32",
     "price": "$1,861.24",
-    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2mmV0W6Y5Nk-DXucQjmJybbLoAwqcCQfeUg&usqp=CAU",
-    "name": "2 days Unlimited",
-    "description": "this is a short description for packages"
+    "picture": "https://www.matristudio.com/uploads/6083e9bf8ad91_wedding-photography.jpg",
+    "name": "Engagment",
+    "description": "One day unlimited photo shoot for engagment "
   }
 ]

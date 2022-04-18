@@ -13,7 +13,7 @@ const Service = ({ singlePackage }) => {
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          <h5>{price}</h5>
+          <h5>Price : {price}</h5>
           <button
             className="w-100 primary-btn border-0"
             onClick={() => {

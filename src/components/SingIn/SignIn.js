@@ -65,7 +65,7 @@ const SignIn = () => {
           variant="outline-primary w-100"
           type="submit"
         >
-          Submit
+          Sign In
         </Button>
       </Form>
       <div className="d-flex mt-4">

@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import BestClicks from "../BestClicks/BestClicks";
 import Service from "../Service/Service";
 import "./Home.css";
 
@@ -30,6 +31,9 @@ const Home = () => {
           <p className="legend">Legend 3</p>
         </div>
       </Carousel>
+      <div>
+        <BestClicks></BestClicks>
+      </div>
       <div>
         <Service></Service>
       </div>

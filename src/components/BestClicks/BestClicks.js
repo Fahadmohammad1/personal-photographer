@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 const BestClicks = () => {
   return (
     <div>
-      <h1 className="my-5">Best Clicks</h1>
+      <h1 className="my-5">Best Click</h1>
       <div className="d-md-flex align-items-center">
         <div className="px-5">
           <Card className="bg-dark text-white">
@@ -13,11 +13,10 @@ const BestClicks = () => {
               alt="Card image"
             />
             <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+              <Card.Title className="text-black">Mountain Clicks</Card.Title>
+              <Card.Text className="text-black">
+                I clicked this picture between Mountains. This was a awesome
+                place for photoshoot.
               </Card.Text>
               <Card.Text>Last updated 3 mins ago</Card.Text>
             </Card.ImgOverlay>
@@ -30,13 +29,7 @@ const BestClicks = () => {
               alt="Card image"
             />
             <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
+              <Card.Title className="text-black">Card title</Card.Title>
             </Card.ImgOverlay>
           </Card>
           <Card className="bg-dark text-white my-2">
@@ -45,13 +38,7 @@ const BestClicks = () => {
               alt="Card image"
             />
             <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
+              <Card.Title className="text-black">Card title</Card.Title>
             </Card.ImgOverlay>
           </Card>
           <Card className="bg-dark text-white my-2">
@@ -60,13 +47,7 @@ const BestClicks = () => {
               alt="Card image"
             />
             <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
+              <Card.Title className="text-black">Card title</Card.Title>
             </Card.ImgOverlay>
           </Card>
         </div>

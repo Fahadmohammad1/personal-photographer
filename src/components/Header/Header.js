@@ -33,7 +33,7 @@ const Header = () => {
         variant="light"
       >
         <Container>
-          <Navbar.Brand href="#home" className="text-dark fs-4">
+          <Navbar.Brand href="#home" id="site-name" className="fs-4">
             Sindid's Photgraphy
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

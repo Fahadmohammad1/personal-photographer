@@ -4,6 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import BestClicks from "../BestClicks/BestClicks";
 import Services from "../Services/Services";
 import "./Home.css";
+import banner1 from "../../images/banner/banner-1.png";
+import banner2 from "../../images/banner/banner-2 .png";
 
 const Home = () => {
   return (
@@ -14,21 +16,15 @@ const Home = () => {
             src="https://www.andreasampoli.com/wp-content/uploads/2018/03/Andrea-Sampoli-Italy-Wedding-Photographer-1-1.jpg"
             alt=""
           />
-          <h2 className="legend fw-bold">Natural Photography</h2>
+          <h2 className="legend fw-bold">Shine like Sun</h2>
         </div>
         <div>
-          <img
-            src="https://cdn.shopify.com/s/files/1/0553/6422/3136/files/Jimmy-Bui-Photography_010-_40jimmybuiphotography.jpg"
-            alt=""
-          />
-          <p className="legend">Legend 2</p>
+          <img src={banner2} alt="" />
+          <p className="legend">Cool like Evening</p>
         </div>
         <div>
-          <img
-            src="https://banuphotography.com/wp-content/uploads/2021/06/mannar-wedding-77.jpg"
-            alt=""
-          />
-          <p className="legend">Legend 3</p>
+          <img src={banner1} alt="" />
+          <p className="legend">Glow like Moon</p>
         </div>
       </Carousel>
       <div>

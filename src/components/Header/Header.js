@@ -33,7 +33,7 @@ const Header = () => {
         variant="light"
       >
         <Container>
-          <Navbar.Brand href="#home" className="text-dark">
+          <Navbar.Brand href="#home" className="text-dark fs-4">
             Sindid's Photgraphy
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -62,7 +62,7 @@ const Header = () => {
             <Nav>
               {user ? (
                 <button
-                  className="primary-btn rounded-pill fw-bold text-white"
+                  className="primary-btn "
                   onClick={() => {
                     signOut(auth);
                   }}
@@ -75,17 +75,13 @@ const Header = () => {
                     to="/signIn"
                     className="text-dark my-auto text-decoration-none mx-2 "
                   >
-                    <button className="rounded-pill primary-btn">
-                      SIGN IN
-                    </button>
+                    <button className="primary-btn">SIGN IN</button>
                   </NavLink>
                   <NavLink
                     to="/signUp"
                     className="text-dark my-auto text-decoration-none"
                   >
-                    <button className="rounded-pill primary-btn">
-                      SIGN UP
-                    </button>
+                    <button className=" primary-btn">SIGN UP</button>
                   </NavLink>
                 </div>
               )}

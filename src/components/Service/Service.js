@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "./Service.css";
 
@@ -8,20 +8,20 @@ const Service = ({ singlePackage }) => {
   const navigate = useNavigate();
   return (
     <div id="services" className="mb-4">
-      <Card className="mx-auto custom-style" style={{ width: "18rem" }}>
+      <Card className="mx-auto" id="custom-style" style={{ width: "18rem" }}>
         <Card.Img className="p-4" variant="top" src={picture} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
           <h5>Price : {price}</h5>
-          <Button
-            className="w-100 primary-btn border-0"
+          <button
+            className="w-100 primary-btn"
             onClick={() => {
               navigate("/checkOut");
             }}
           >
             Hire
-          </Button>
+          </button>
         </Card.Body>
         <div className="border-style bg-white">
           <img

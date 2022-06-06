@@ -11,7 +11,7 @@ const Services = () => {
   }, []);
   return (
     <div>
-      <h1 className="mb-5">My Packages</h1>
+      <h1 className="my-5">My Packages</h1>
       <div className="row row-cols-lg-3 w-100 mx-auto">
         {packages.map((singlePackage) => (
           <Service

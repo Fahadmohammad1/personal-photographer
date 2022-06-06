@@ -1,12 +1,6 @@
-.custom-style {
+#custom-style {
   position: relative;
   border: 2px solid #a0b8cb;
-}
-.primary-btn {
-  background-color: #6b8181;
-}
-.primary-btn:hover {
-  background-color: #f8ca92;
 }
 .border-style {
   position: absolute;
